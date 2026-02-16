@@ -38,11 +38,37 @@ git clone git@github.com:Musyonchez/Kijiji-Trust.git
 # Navigate to project directory
 cd Kijiji-Trust
 
-# Install dependencies (after Next.js setup)
+# Navigate to app folder
+cd app
+
+# Install dependencies (already done if cloning)
 npm install
+
+# Set up environment variables
+cp ../.env.example .env.local
+# Edit .env.local with your Firebase credentials
 
 # Run development server
 npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 📁 Project Structure
+
+```
+Kijiji-Trust/
+├── app/                    # Next.js application
+│   ├── app/               # App router pages
+│   ├── components/        # React components (to be created)
+│   ├── lib/              # Utilities and configs (to be created)
+│   └── public/           # Static assets
+├── docs/                  # Project documentation
+│   ├── 1-kijiji-trust-digital-chama.md
+│   ├── 2-cat1-hci-presentation-guidelines.md
+│   └── 3-implementation-plan.md
+├── .env.example          # Environment variables template
+└── README.md             # This file
 ```
 
 ## 🎨 Design Principles (HCI Focus)
